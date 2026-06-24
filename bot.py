@@ -5,8 +5,8 @@ import aiohttp
 import asyncio
 
 # --- CONFIGURATION ---
-DISCORD_BOT_TOKEN = "Place your Discord bot token here"
-HF_API_URL = "Endpoint URL of your FastAPI Space (e.g., https://your-space-name.hf.space/run/predict)"
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
+HF_API_URL = "https://pugazh24-cyberwolf-sentinel-engine.hf.space/generate"
 
 intents = discord.Intents.default()
 intents.message_content = True
